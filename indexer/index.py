@@ -37,14 +37,13 @@ try:
     print(f"Connected to collection '{collection.name}'. Total items: {collection.count()}")
 except Exception as e:
     print(f"Error connecting to or creating ChromaDB collection: {e}")
-    raise # Stop execution if collection setup fails
+    raise 
 
 # Initialize the Sentence Transformer embedding model
 print(f"Loading Sentence Transformer model: {sentence_transformer_model_name}...")
 embedding_model = SentenceTransformer(sentence_transformer_model_name)
 print("Embedding model loaded.")
 
-#change this later to load only one case at a tim
 def load_data(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as f: 
@@ -94,7 +93,6 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
 
     for i, case in enumerate(data):
         try:
-            # Use a robust unique ID for the case
             case_id = case.get("url") or case.get("medium_neutral_citation") or f"case_{i}"
 
             if not case_id:
@@ -134,16 +132,15 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
                             "category": case.get("category", ""),
                         }
                         # Ensure ChromaDB compatibility for metadata values
-                        for key, val in list(meta_field_chroma_metadata.items()): # Use list to allow deletion
-                            if isinstance(val, dict): # Chroma might handle lists better, but nested dicts often problematic
+                        for key, val in list(meta_field_chroma_metadata.items()): 
+                            if isinstance(val, dict): 
                                 try:
-                                    # Attempt to stringify complex types, remove if fails
-                                    meta_field_chroma_metadata[key] = json.dumps(val) # Use json.dumps for dicts
+                                    meta_field_chroma_metadata[key] = json.dumps(val) 
                                 except Exception:
                                     print(f"Warning: Could not JSON stringify metadata key '{key}' for case {case_id}, field '{field}'. Removing.")
                                     del meta_field_chroma_metadata[key]
                             elif val is None:
-                                meta_field_chroma_metadata[key] = "" # Store None as empty string
+                                meta_field_chroma_metadata[key] = "" 
 
                         # Unique ID for this metadata field vector
                         meta_field_vector_id = f"{case_id}_meta_{field}"
@@ -176,16 +173,15 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
 
                         # Metadata for the paragraph vector
                         paragraph_chroma_metadata: Dict[str, Any] = {
-                            "type": "paragraph", # Type for paragraph vectors
-                            "original_case_id": str(case_id), # Link back to the case
-                            "p_num": p_num if p_num is not None else -1, # Use -1 or similar if p_num is None
-                            "text": p_text, # Store the original paragraph text
+                            "type": "paragraph",
+                            "original_case_id": str(case_id), 
+                            "p_num": p_num if p_num is not None else -1, 
+                            "text": p_text, 
                             "medium_neutral_citation": case.get("medium_neutral_citation", ""),
                             "url": case.get("url", ""),
                             "category": case.get("category", ""),
-                            # Include other simple, relevant case identifiers if needed
+                            
                         }
-                        # Ensure ChromaDB compatibility
                         for key, val in list(paragraph_chroma_metadata.items()):
                             if isinstance(val, dict):
                                 try:
@@ -194,10 +190,9 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
                                     print(f"Warning: Could not JSON stringify metadata key '{key}' for paragraph {paragraph_vector_id}. Removing.")
                                     del paragraph_chroma_metadata[key]
                             elif val is None:
-                                 paragraph_chroma_metadata[key] = "" # Store None as empty string
-                            # Ensure p_num is int or float if not None
+                                 paragraph_chroma_metadata[key] = "" 
                             elif key == "p_num" and val == "":
-                                paragraph_chroma_metadata[key] = -1 # Replace empty string p_num
+                                paragraph_chroma_metadata[key] = -1 
 
 
                         # Append to batches
@@ -211,18 +206,14 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
                         print(f"Error embedding or prepping paragraph {p_num} for case {case_id}: {p_emb_e}. Skipping paragraph.")
                         continue
             else:
-                # Only print if paragraphs were expected but missing/invalid
                 if "paragraphs" in case:
                      print(f"Skipping paragraphs for case {case_id}: Invalid 'paragraphs' field format (expected a list).")
-                # else: No paragraphs field, which might be normal.
 
             # --- Add batch to ChromaDB if ready ---
             if len(ids_batch) >= batch_size:
                 print(f"Adding batch of {len(ids_batch)} vectors to ChromaDB (total processed: {total_vectors_processed})...")
                 try:
-                    # Use collection.add or collection.upsert
-                    # add() is faster if IDs are guaranteed unique on first run
-                    # upsert() is safer if you might re-run and want to update
+
                     collection.add(
                         ids=ids_batch,
                         embeddings=embeddings_batch,
@@ -247,8 +238,7 @@ def store_case_multi_vectors_in_chroma(file_path: str, collection: chromadb.Coll
 
         except Exception as case_e:
             print(f"Severe Error processing case {i+1} (ID: {case.get('medium_neutral_citation', 'N/A')}): {case_e}")
-            # If a whole case processing fails, decide if you want to continue or break
-            continue # Continue processing other cases
+            continue 
 
     # --- Add any remaining vectors in the last batch ---
     if ids_batch:

@@ -10,8 +10,13 @@ The project consists of two main independent components:
 ## Project Structure
 
 lawRAG/
+
+├── base_images/
+│   └── rag_base
+│       └── Dockerfile
+│       └── requirements.txt
 ├── data/
-│   └── cases_page_2.jsonl      #legal case data file (JSONL format)
+│   └── cases_1.jsonl           #legal case data file (JSONL format)
 ├── indexer/
 │   ├── index.py                # The script to build the ChromaDB index
 │   └── Dockerfile              # Dockerfile for the indexer service
@@ -29,29 +34,20 @@ lawRAG/
 Navigate to the `lawRAG/` directory in your terminal.
 
 1.  **Build the Docker Images:**
-    This command builds the images for both the indexer and retriever services based on their respective Dockerfiles. You only need to do this once or when you change the Dockerfiles or `requirements.txt`.
-
     - docker-compose build base_images
     
     - docker-compose build
 
 2.  **Run the Indexer (One-off Job):**
-    This command starts a container based on the indexer image. It will run your `index.py`, read the data file, compute embeddings, and populate the ChromaDB database in the `lawRAG/chroma_db_storage` directory on your host machine via the volume mount. The container will automatically stop and be removed (`--rm`) after the script finishes.
-
     
-    docker-compose run --rm indexer
+    docker-compose run indexer
     
     Wait for this process to complete before running the retriever. You should see output indicating the data loading and indexing progress.
 
 3.  **Run the Retriever (Interactive Q&A):**
-    This command starts a container based on the retriever image. It will connect to the ChromaDB instance (using the data persisted in `lawRAG/chroma_db_storage` on your host) and start the interactive Q&A loop.
+    This command starts a container based on the retriever image. It will connect to the ChromaDB instance (using the data persisted in `lawRAG/chroma_db_storage` on your host) and starts the gradio instance which can be accessed in http://localhost:7860
 
-    ```bash
-    docker-compose up retriever
-    ```
-    The retriever script will start, and you can begin typing your legal questions into the terminal. Type `exit` to quit the retriever and stop the container (`Ctrl+C` also works).
-
-    *Note: The retriever service's `restart: on-failure` policy in `docker-compose.yml` means Docker Compose will try to restart it if it crashes, but you stop it cleanly by typing `exit` in the application prompt.*
+    docker-compose run -p 7860:7860 retriever
 
 ## Configuration
 

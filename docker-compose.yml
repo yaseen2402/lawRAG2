@@ -3,16 +3,15 @@ services:
 
   base_images:
     build:
-      context: ./base_images/rag_base # Path to your base Dockerfile directory
+      context: ./base_images/rag_base # Path to base Dockerfile directory
       dockerfile: ./Dockerfile
     image: rag_base # Tag the image so other services can use it
-    # No volumes needed for the builder itself usually
     # Use 'docker-compose build base_rag_image_builder' to build it first
 
   indexer:
     build:
-      context: .  # <<-- CHANGE: Set context to the parent directory (lawRAG2/)
-      dockerfile: ./indexer/Dockerfile # <<-- Specify the path to the Dockerfile within the new context
+      context: .  
+      dockerfile: ./indexer/Dockerfile 
 
     container_name: law_rag_indexer
     volumes:
@@ -26,8 +25,8 @@ services:
   # Service for the Retriever
   retriever:
     build:
-      context: .  # <<-- CHANGE: Set context to the parent directory (lawRAG2/)
-      dockerfile: ./retriever/Dockerfile # <<-- Specify the path to the Dockerfile within the new context
+      context: .  
+      dockerfile: ./retriever/Dockerfile 
     container_name: law_rag_retriever
     volumes:
       # Paths here are relative to the docker-compose.yml location (lawRAG2/)
