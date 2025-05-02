@@ -8,7 +8,7 @@ The project consists of two main independent components:
 
 
 ## Project Structure
-
+```
 lawRAG/
 
 ├── base_images/
@@ -27,7 +27,7 @@ lawRAG/
 ├── .env                        # Environment variables (API keys)
 ├── requirements.txt            # Shared Python dependencies for both services
 └── docker-compose.yml          # Docker Compose file to manage services
-
+```
 
 ## Running with Docker Compose
 
