@@ -10,7 +10,7 @@ def extract_case_details(jsonl_file):
     with open(jsonl_file, 'r', encoding='utf-8') as f:
         # Read and process the first 110 lines
         for i, line in enumerate(f):
-            if i >= 110:  # Stop after 110 lines
+            if i >= 200:  # Stop after 110 lines
                 break
             try:
                 case = json.loads(line)

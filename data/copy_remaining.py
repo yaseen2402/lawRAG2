@@ -26,8 +26,8 @@ def copy_json_lines(source_file, destination_file, start_line):
                     continue
 
 # Example usage
-source_path = r'C:\Users\hp\lawRAG2\data\cases_3.jsonl'
-destination_path = r'C:\Users\hp\lawRAG2\data\rcases_3.jsonl'
-start_from_line = 75
+source_path = r'C:\Users\hp\lawRAG2\data\cases_2.jsonl'
+destination_path = r'C:\Users\hp\lawRAG2\data\smol_cases_2.jsonl'
+start_from_line = 199
 
 copy_json_lines(source_path, destination_path, start_from_line)

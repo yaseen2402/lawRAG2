@@ -33,4 +33,83 @@ services:
       - ./chroma_db_storage:/app/chroma_db_storage
       - ./.env:/app/.env
       - ./model_cache:/root/.cache/torch/sentence_transformers/
+      - ./retriever:/app
     restart: "on-failure"
+
+  evaluator:
+    build:
+      context: .
+      dockerfile: ./eval/Dockerfile # Specify the path to the evaluator's Dockerfile
+    container_name: law_rag_evaluator
+    volumes:
+      # Paths here are relative to the docker-compose.yml location
+      - ./hf_cache/huggingface/hub:/root/.cache/huggingface/hub
+      - ./chroma_db_storage:/app/chroma_db_storage # Mount ChromaDB storage
+      - ./.env:/app/.env # Mount the environment file
+      - ./model_cache:/root/.cache/torch/ # Mount model cache
+      - ./eval/evaluation_data.json:/app/evaluation_data.json # Mount the evaluation data file
+    environment:
+      - HF_HOME=/root/.cache/huggingface
+      - HF_HUB_CACHE=/root/.cache/huggingface/hub
+      - TRANSFORMERS_CACHE=/root/.cache/huggingface  # backwards‑compat
+    restart: "no" # Evaluation is typically a one-time run, so no restart
+
+
+  # Qdrant Vector Database Service
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_db
+    ports:
+      - "6333:6333" # gRPC
+      - "6334:6334" # REST
+    volumes:
+      - ./qdrant_storage:/qdrant/storage # Persistent storage for Qdrant data
+    restart: "on-failure"
+
+  # Service for the Indexer (Qdrant) - Builds from the new directory
+  indexer_qdrant:
+    build:
+      context: ./indexer_qdrant # Build context is the new directory
+      dockerfile: Dockerfile      # Dockerfile is inside the new directory
+
+    container_name: law_rag_indexer_qdrant
+    depends_on:
+      - qdrant # Ensure Qdrant is running before indexing
+    volumes:
+      # Mount your data file (relative to docker-compose.yml)
+      - ./data/cases_2.jsonl:/app/data/cases_2.jsonl
+      # Mount environment variables
+      - ./.env:/app/.env
+      # Cache models
+      - ./model_cache:/root/.cache/torch/sentence_transformers/
+    # The CMD in the Dockerfile handles which script to run
+    restart: "no" # Indexing is usually a one-time task
+    environment:
+      # Pass Qdrant host/port to the indexer service
+      - QDRANT_HOST=qdrant_db # Use the service name defined in docker-compose
+      - QDRANT_PORT=6333
+
+  # Service for the Retriever (Qdrant) - Builds from the new directory
+  retriever_qdrant:
+    build:
+      context: ./retriever_qdrant # Build context is the new directory
+      dockerfile: Dockerfile      # Dockerfile is inside the new directory
+
+    container_name: law_rag_retriever_qdrant
+    depends_on:
+      - qdrant # Ensure Qdrant is running before retrieving
+      # - indexer_qdrant # Optionally depend on indexer if you want to guarantee indexing finishes first
+    volumes:
+      # Mount environment variables
+      - ./.env:/app/.env
+      # Cache models
+      - ./model_cache:/root/.cache/torch/sentence_transformers/
+    ports:
+      - "7860:7860" # Port for Gradio interface
+    # The CMD in the Dockerfile handles which script to run
+    restart: "on-failure"
+    environment:
+      # Pass Qdrant host/port to the retriever service
+      - QDRANT_HOST=qdrant_db # Use the service name defined in docker-compose
+      - QDRANT_PORT=6333
+  

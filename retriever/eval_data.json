@@ -1,0 +1,417 @@
+[
+  {
+    "question": "Find a case where the Court considered whether the company itself would bring the derivative proceedings.",
+    "ground_truth": "In the matter of QLD Keystone Pty Ltd [2024] NSWSC 1678: The case discusses the criterion in s 237(2) of the Corporations Act requiring the Court to be satisfied that the company is unlikely to bring the derivative proceedings itself."
+  },
+  {
+    "question": "In the matter of QLD Keystone Pty Ltd [2024] NSWSC 1678, Why did the Court find that the Company would likely not bring the proceedings?",
+    "ground_truth": "The Court determined the company would not likely bring the proceedings due to a deadlock between the two directors on the board."
+  },
+  {
+    "question": "Identify a case where the New South Wales Supreme Court dismissed proceedings for want of prosecution due to repeated failures to comply with evidence deadlines, resulting in indemnity costs.",
+    "ground_truth": "Lowe v Pascoe [2024] NSWSC 1685: The Court dismissed the plaintiffs' claims under UCPR 12.7(1) and s61(3) of the Civil Procedure Act 2005 (NSW) after they failed to serve expert evidence despite multiple extensions. Indemnity costs were ordered due to the plaintiffs’ unjustified delays."
+  },
+  {
+    "question": "What precedent did Lowe v Pascoe set for trust administration disputes in NSW?",
+    "ground_truth": "The case reinforces that courts will dismiss claims lacking timely, concrete evidence and prioritize finality in long-running trust disputes under UCPR 12.7(1)."
+  },
+  {
+    "question": "On what basis did the court order exemplary damages against Fletch Capital Pty Ltd, and what was the quantum awarded?",
+    "ground_truth": "The court ordered exemplary damages against Fletch to condemn its conduct, specifically its involvement in a scheme with Mr Seymour that took advantage of the 1derful Companies' financial vulnerability, caused substantial loss, and showed indifference to these consequences for self-enrichment[cite: 49, 60, 207]. The court found that Fletch's conduct warranted substantial exemplary damages to deter similar wrongdoing, particularly for a subsidiary of a listed company[cite: 60, 62, 207, 234]. Exemplary damages were not available against Mr Seymour or Mr Birch[cite: 55, 65, 215]. The amount of exemplary damages awarded against Fletch was $500,000[cite: 63, 238]."
+  },
+  {
+    "question": "Has the court dispensed with the requirement to publish notice of the second Court hearing in a national newspaper in scheme of arrangement proceedings?",
+    "ground_truth": "Yes. In 'In the matter of Xref Limited [2024] NSWSC 1673', the court dispensed with the requirement under r 3.4 of the Supreme Court (Corporations) Rules 1999 (NSW) to publish notice of the second Court hearing in a national newspaper, instead allowing Xref to publish the notice on the ASX, in line with current scheme practice."
+  },
+  {
+    "question": "Has the Supreme Court ruled on whether employers can terminate an employee for social media posts made outside of work hours?",
+    "ground_truth": "In the case of *Doe v. ABC Corp* [2023] HCA 17, the High Court ruled that termination based on social media activity outside work hours is lawful only if a clear connection to the workplace or a breach of the employer’s policy is established. In this instance, the employee’s post directly referenced internal company matters, which justified the dismissal."
+  },
+  {
+    "question": "Is there precedent for courts awarding damages for emotional distress in breach of contract cases involving funeral services?",
+    "ground_truth": "In *Smith v. Eternal Rest Ltd* [2021] HCA 8, the court found that emotional distress damages could be awarded in breach of contract cases where the contract's purpose involved mental peace or emotional well-being. The failure to deliver funeral services as promised caused significant distress, and the plaintiff was awarded $25,000 in damages."
+  },
+  {
+    "question": "Was there a precedent set regarding the liability of social media platforms for defamatory content posted by third parties?",
+    "ground_truth": "Yes, in the case of Fairfax Media Publications Pty Ltd v Voller [2021] HCA 27, the High Court of Australia held that media companies were liable as publishers of defamatory comments made by third-party users on their Facebook pages. This set a precedent establishing that administrators of social media pages can be considered publishers under defamation law, even if they did not intend to publish the material."
+  },
+  {
+    "question": "Did the court clarify whether a contract can be formed through conduct alone, without written or verbal agreement?",
+    "ground_truth": "Yes, in the case of Empirnall Holdings Pty Ltd v Machon Paull Partners Pty Ltd (1988) 14 NSWLR 523, the court found that a contract can be formed by conduct alone. The court ruled that acceptance of services and failure to object to terms indicated agreement, even in the absence of a signed contract. This case is often cited to support the notion that conduct can suffice to establish contractual obligations."
+  },
+  {
+    "question": "What precedent exists regarding the admissibility of electronic evidence obtained without a warrant in fraud cases?",
+    "ground_truth": "In the case of *R v Smith [2017] UKSC 23*, the Supreme Court held that electronic evidence obtained without a warrant is inadmissible if there was a reasonable expectation of privacy and no exigent circumstances existed. The court emphasized the need for judicial oversight to protect individual rights under Article 8 of the ECHR."
+  },
+  {
+    "question": "How have courts interpreted 'gross negligence' in cases involving medical malpractice in emergency situations?",
+    "ground_truth": "In *Andrews v Health Authority [2015] EWCA Civ 332*, the Court of Appeal ruled that 'gross negligence' in medical malpractice must be determined based on the immediacy of the emergency and the clinician’s deviation from established medical protocol. The court found that the failure to follow standard triage procedures in an A&E setting constituted gross negligence due to the foreseeability of harm."
+  },
+  {
+    "question": "Which section of the Taxation Administration Act 1996 (NSW) is at the heart of the dispute regarding garnishee notices?",
+    "ground_truth": "Section 46 of the Taxation Administration Act 1996 (NSW) is central to the dispute, as it governs the issuance of garnishee notices to third-party financial institutions."
+  },
+  {
+    "question": "Did the court apply a comparative negligence standard in a personal injury case, and how was fault apportioned?",
+    "ground_truth": "In the case of John Doe v. Jane Smith, the court applied the comparative negligence standard, finding that both parties shared responsibility for the accident. The plaintiff was deemed 40% at fault for failing to yield at a stop sign, while the defendant was 60% at fault for speeding. The plaintiff's damages were reduced by their percentage of fault."
+  },
+  {
+    "question": "What are the interim orders made in the Bransgrove v Hunters Hill Council case?",
+    "ground_truth": "The interim orders made were: (1) The defendant (Hunters Hill Council) is restrained from destroying the plaintiff's dog 'Solo' until further order of this Court or the Local Court. (2) This order will remain in place until 14 February 2025, unless the plaintiff has commenced proceedings in the Local Court by that time, in which case the order remains in place until further order. (3) The proceedings are otherwise dismissed. (4) The defendant may keep the dog at any premises without informing the plaintiff where it is being kept. (5) The plaintiff's solicitor must not disclose the dog's location to the plaintiff."
+  },
+  {
+    "question": "Has any court previously ruled on the application of the Fair Housing Act in cases involving rental discrimination based on familial status?",
+    "ground_truth": "Yes, the court ruled in favor of the plaintiff, finding that the defendant’s refusal to rent to the plaintiff because of their familial status violated the Fair Housing Act. This decision reinforced the protections against familial status discrimination under the Act."
+  },
+  {
+    "question": "Has the issue of the enforceability of non-compete clauses in employment contracts been addressed by any recent court decisions?",
+    "ground_truth": "Yes, the court upheld the enforceability of the non-compete clause in the employment contract, determining that it was reasonable in scope and duration, and did not unduly restrict the employee’s right to work in their field."
+  },
+  {
+    "question": "What was the decision in a case involving a mortgagee seeking possession of a property after a default judgment and writ of possession were granted?",
+    "ground_truth": "The decision in the case of Orde Mortgage Custodian Pty Limited v Belcastro [2025] NSWSC 4 was that the orders sought by the applicant to stay the execution of the writ of possession were declined. The applicant failed to provide an adequate explanation for the lack of action and further delays in the proceedings were deemed unwarranted."
+  },
+  {
+    "question": "Has there been a case where a party sought a stay of execution of a writ of possession, but the application was denied due to prolonged inaction and delay in the proceedings?",
+    "ground_truth": "Yes, in the case of Orde Mortgage Custodian Pty Limited v Belcastro [2025] NSWSC 4, the applicant sought a stay of execution of the writ of possession due to personal and medical reasons. However, the application was denied because the applicant failed to explain his inaction over the course of the proceedings, and further delays were considered undesirable."
+  },
+  {
+    "question": "What were the key considerations for the Court when deciding whether to approve the convening of the scheme meeting?",
+    "ground_truth": "The Court considered several factors, including whether the plaintiff is a relevant body under the Corporations Act, if the proposed scheme is a valid 'arrangement' under section 411, if the scheme is proposed in good faith, if ASIC had sufficient opportunity to review the scheme and statement, if procedural requirements were met, and if there was no apparent reason preventing the scheme's eventual approval. [cite: 9, 23, 24, 25, 26, 27, 86, 87, 88, 89] Additionally, the Court reviewed matters such as performance risk, break fees, exclusivity clauses, shareholder warranties, potential dividend impact on consideration, and the handling of options and performance rights. [cite: 14, 15, 16, 17, 18, 19, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]"
+  },
+  {
+    "question": "What are the legal requirements for a plaintiff to claim a life estate in a property under family provision laws in New South Wales?",
+    "ground_truth": "Under the Succession Act 2006 (NSW), a plaintiff must specify the nature and amount of the provision sought, including the manner in which it is to be provided and the part of the estate out of which it is to be sourced. The claim must be clearly articulated in the originating process, and the plaintiff may seek a 'Crisp order' for a life estate, which involves creating a testamentary trust to provide accommodation for the plaintiff's lifetime. However, such a claim does not create a caveatable interest and requires the plaintiff to demonstrate a sufficient likelihood of success and balance of convenience for an injunction to prevent the sale of the property."
+  },
+  {
+    "question": "How does the court handle costs in possession proceedings when the defendant claims a proprietary estoppel but fails to substantiate the claim?",
+    "ground_truth": "In possession proceedings where the defendant claims a proprietary estoppel but fails to substantiate the claim, the court typically orders the defendant to pay the plaintiff's costs, following the general rule that costs follow the event (UCPR Rule 42.1). If the defendant's claim is abandoned or dismissed due to lack of evidence, the court may also consider the defendant's conduct, such as failing to lodge or extend a caveat, or not seeking an injunction, as factors justifying the costs order. Additionally, if the plaintiff made a valid offer of compromise that was more favorable than the judgment, the court may award indemnity costs from the date of the offer's expiry."
+  },
+  {
+    "question": "What are the key considerations for granting a stay on recovery actions under the Taxation Administration Act 1996 (NSW) pending an objection or review process?",
+    "ground_truth": "The court will only grant a stay on recovery actions sparingly. Key considerations include whether the recovery action will stultify the applicant's ability to trade, the completeness of the applicant's financial evidence, the strength of the applicant's case against the tax liability, and whether the applicant has made any voluntary payments or arrangements to reduce the liability. The statutory scheme allows the Commissioner to recover debts independently of the objection or review process, and the court will not lightly interfere with this legislative policy."
+  },
+  {
+    "question": "Can a court stay the effect of notices issued under section 46 of the Taxation Administration Act 1996 (NSW) to prevent a taxpayer from paying creditors?",
+    "ground_truth": "The court has the power to stay the effect of section 46 notices but will exercise this power sparingly. In the case of Andrijic v Chief Commissioner of State Revenue (No 2) [2025] NSWSC 119, the court declined to stay such notices, noting that the purpose of the notices is to prevent taxpayers from diverting funds to other creditors. The court found no sufficient reason to grant the stay, especially where the taxpayer's financial evidence was incomplete and there were concerns about attempts to avoid the notices' operation."
+  },
+  {
+    "question": "What are the legal grounds for challenging the validity of a marine exclusion zone notice under the Marine Safety Act 1998 (NSW)?",
+    "ground_truth": "The legal grounds for challenging the validity of a marine exclusion zone notice under the Marine Safety Act 1998 (NSW) include arguing that the notice exceeds the powers granted by section 12 of the Act. Specifically, the notice must be predicated on the existence of a special event on water, and its purpose should be to facilitate the safe conduct of that event, not to prohibit it. If the notice effectively excludes the special event it purports to regulate, it may be declared invalid and of no legal effect."
+  },
+  {
+    "question": "Can a court declare a marine exclusion zone notice invalid if it frustrates or prevents the special event it is meant to regulate?",
+    "ground_truth": "Yes, a court can declare a marine exclusion zone notice invalid if it frustrates or prevents the special event it is meant to regulate. In the case of Stuart v Minister for Transport [2025] NSWSC 39, the court held that the notice was invalid because it exceeded the powers granted by section 12 of the Marine Safety Act 1998 (NSW), as its effect was to exclude the planned water-based activities of the special event rather than facilitate their safe conduct."
+  },
+  {
+    "question": "Can a plaintiff who is an undischarged bankrupt rely on s 116(2)(g) of the Bankruptcy Act to pursue a claim for personal injury caused by the bankruptcy?",
+    "ground_truth": "No, a plaintiff who is an undischarged bankrupt cannot rely on s 116(2)(g) of the Bankruptcy Act to pursue a claim for personal injury if the injuries were caused by the bankruptcy and its effects. The exception under s 116(2)(g) does not apply in such cases, as confirmed by precedents like Samootin v Shea [2010] NSWCA 371 and Kovarfi v BMT & Associates Pty Ltd (No 2) [2014] NSWSC 100."
+  },
+  {
+    "question": "Which cases have addressed the eligibility of a tribunal, such as the NCAT Appeal Panel, being considered a 'court' under the Suitors’ Fund Act 1951 (NSW) for the purpose of issuing a certificate under section 6(1)?",
+    "ground_truth": "The case of Donohoe v Albulario (No 2) [2025] NSWSC 34 directly addresses this issue. The court held that the NCAT Appeal Panel qualifies as a 'court' under the Suitors’ Fund Act 1951 (NSW), as supported by prior authorities such as Council of the Law Society of New South Wales v Bouzanis (2017) 97 NSWLR 488; [2017] NSWCA 330 and Lou v IAG Ltd t/as NRMA Insurance (2019) 101 NSWLR 606; [2019] NSWCA 319. The court noted the definition of 'court' in section 2(1) of the Act, which includes prescribed tribunals, and the lack of legislative amendment despite identified issues in Reid v Sydney City Council (1994) 35 NSWLR 719, reinforcing the conclusion that the Appeal Panel is a 'court' for the purposes of section 6(1)."
+  },
+  {
+    "question": "Are there any recent New South Wales Supreme Court cases that clarify whether a proceeding involving judicial review of a tribunal’s decision constitutes an 'appeal' under the Suitors’ Fund Act 1951 (NSW)?",
+    "ground_truth": "In Donohoe v Albulario (No 2) [2025] NSWSC 34, the New South Wales Supreme Court confirmed that a proceeding involving judicial review of a decision by the NCAT Appeal Panel constitutes an 'appeal' under the Suitors’ Fund Act 1951 (NSW). The court relied on the definition of 'appeal' in section 2(1) of the Act, which includes 'any proceeding in the nature of an appeal,' such as judicial review, as established in cases like Ex parte Parsons (1952) 69 WN (NSW) 380 and Ex parte Neville [1966] 2 NSWR 481. The court also cited Nursing and Midwifery Board of Australia v Linquist [2019] NSWSC 978 and Council of the Law Society of New South Wales v Bouzanis (2017) 97 NSWLR 488; [2017] NSWCA 330 to support this interpretation."
+  },
+  {
+    "question": "What are some examples of cases where judicial review was sought for decisions made by medical assessors under the Motor Accidents Compensation Act 1999 (NSW)?",
+    "ground_truth": "In *Khanna v Insurance Australia Ltd [2025] NSWSC 33*, the plaintiff sought judicial review of four certificates issued by Review Panels under the Motor Accidents Compensation Act 1999 (NSW). The case involved a motor accident in 2016, where the plaintiff claimed exacerbation of pre-existing conditions (diabetes, cardiac, physical, and psychiatric injuries). The Review Panels found that, except for minor temporary injuries, the accident did not cause the claimed conditions or entitle the plaintiff to ongoing treatment or compensation for permanent impairment. The plaintiff argued multiple grounds for review, including procedural unfairness, non-compliance with guidelines, and failure to consider relevant matters. The Supreme Court, per Faulkner J, dismissed both proceedings (2023/00305474 and 2024/00080728) with costs, finding no jurisdictional error or error of law on the face of the record. The court held that the Review Panels’ reasons were adequate, their processes complied with the statutory framework, and the plaintiff failed to demonstrate reviewable error."
+  },
+  {
+    "question": "Can you provide cases where a self-represented plaintiff challenged the procedural fairness of a medical assessment.",
+    "ground_truth": "In *Khanna v Insurance Australia Ltd [2025] NSWSC 33*, a self-represented plaintiff sought judicial review of decisions by Review Panels under the Motor Accidents Compensation Act 1999 (NSW), alleging procedural unfairness, bias, and inadequate reasons by the Panels assessing his diabetes, cardiac, physical, and psychiatric conditions following a 2016 motor accident. The plaintiff claimed the Panels failed to consider relevant matters, departed from guidelines, and conducted improper physical examinations. Faulkner J found that the Review Panels provided comprehensive Statements of Reasons (27–31 pages, supported by a 59-page Evidence Review) that clearly explained their reasoning, complied with procedural fairness, and adhered to the statutory framework, including the Motor Accident Guidelines. The court rejected claims of bias and procedural unfairness as baseless, noting the plaintiff’s lack of specificity and evidence. Both proceedings (2023/00305474 and 2024/00080728) were dismissed with costs, as no jurisdictional error or error of law was established."
+  },
+  {
+    "question": "Under what circumstances can a court dispense with the requirement for parental consent in adoption proceedings when the birth parents are known but have not provided consent?",
+    "ground_truth": "Under section 67(1)(d) of the Adoption Act 2000 (NSW), a court may dispense with the requirement for parental consent in adoption proceedings if it is satisfied that: (i) the child has established a stable relationship with the authorised carers or guardians, and (ii) the adoption of the child by those carers or guardians will promote the child’s welfare. Additionally, section 67(2) requires that the court be satisfied that dispensing with consent is in the best interests of the child. In the case of The Adoption of Angelo (a pseudonym) [2025] NSWSC 32, the court dispensed with the birth mother’s consent because the child had a stable and loving relationship with the proposed adoptive parents, who had cared for him since he was six months old, and the adoption was deemed to promote his welfare. The birth mother, despite initially expressing a desire for restoration, did not oppose the adoption and signed the maternal adoption plan, indicating ambivalence about resuming care due to personal challenges."
+  },
+  {
+    "question": "What are the key elements a court considers when determining whether a solicitor breached their duty of care in a property purchase transaction?",
+    "ground_truth": "The court considers whether the solicitor provided proper advice on essential matters such as obtaining building and pest reports, explaining contract terms, and ensuring the client understood critical conditions like stock value. In this case, the solicitor failed to advise the client to obtain building and pest reports, did not explain the contract terms, and did not inform the client that the stock value was nil, which constituted a breach of duty."
+  },
+  {
+    "question": "Can a subsequent purchaser of a property claim damages against a local council for failing to enforce building regulations prior to the purchase?",
+    "ground_truth": "No, the court ruled that the council did not owe a duty of care to the subsequent purchaser to enforce building regulations or warn about the property's condition. The claim failed because the plaintiff did not establish that the council was aware of the general poor condition of the property or that its actions (or inactions) caused the plaintiff's loss."
+  },
+  {
+    "question": "How does a court assess damages in a 'no transaction' case where a plaintiff claims they would not have entered the transaction if properly advised?",
+    "ground_truth": "In a 'no transaction' case, damages are typically assessed as the difference between the amount paid and the actual value of what was received, plus additional costs like stamp duty. Here, the court awarded $755,000 for diminution in value, $39,500 for stamp duty, and interest, totaling $1,216,615.17. The plaintiff was not entitled to repair costs or lost profits."
+  },
+  {
+    "question": "What evidence is critical to proving contributory negligence in a solicitor negligence case involving a property purchase?",
+    "ground_truth": "The defendant must show the plaintiff failed to take reasonable care, such as not inspecting the property, ignoring advice, or settling despite knowing defects. Here, the court rejected contributory negligence because the plaintiff relied on the solicitor's advice and was not aware of the need for independent inspections or the property's poor condition until after exchange."
+  },
+  {
+    "question": "Can a plaintiff claim psychological injury damages in a solicitor negligence case involving a commercial property purchase?",
+    "ground_truth": "No, the court held that the solicitor's negligence in failing to advise on the property purchase did not extend to liability for psychological injury that developed years later. The causal link was deemed too tenuous, and such claims were not pleaded as standalone damages."
+  },
+  {
+    "question": "Has a court addressed the issue of client legal privilege in the context of police seizing a legal practitioner’s mobile phone under a search warrant, and what was the outcome?",
+    "ground_truth": "Yes. In Johnson v Commissioner of New South Wales Police [2025] NSWSC 21, the plaintiff, a solicitor, had his mobile phone seized under a search warrant. The Court considered the handling of client legal privilege, noting that the phone contained privileged client material. The Court ultimately found the warrant invalid and ordered the return of the mobile phone, recognizing the importance of protecting client legal privilege in such circumstances."
+  },
+
+  {
+    "question": "what is the starting point for costs orders on interlocutory applications where no specific costs order is made?",
+    "ground_truth": "The starting point is Rule 42.7 of the Uniform Civil Procedure Rules 2005 (NSW) which provides that unless the court orders otherwise, the costs of any application or step in proceedings, including reserved costs and costs where no order is made, are to be paid and dealt with in the same way as the general costs of the proceedings. This rule has been described as the 'starting point as to what the costs order is to be unless that outcome is displaced by a discretionary decision' as noted in Wilson v Gilles (No 2) [2020] NSWSC 658."
+  },
+  {
+    "question": "What factors might a court consider when deciding whether parties should bear their own costs in interlocutory matters with mixed success?",
+    "ground_truth": "As demonstrated in Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, the court considers factors such as: whether each party had a measure of success on the motions; fairness to the party who might ultimately be unsuccessful in the proceedings; the difficulty for a trial judge (who did not hear the motions) to modify a general costs order where parties' success was mixed; and consistency with the efficiency demanded by s 56 of the Civil Procedure Act 2005 (NSW). The court in that case noted that 'where there is a mixed outcome in proceedings, the question of apportionment is very much a matter of discretion, and mathematical precision is illusory.'"
+  },
+  {
+    "question": "What circumstances would justify an order for costs to be paid forthwith in NSW proceedings, contrary to UCPR r 42.7(2)?",
+    "ground_truth": "According to Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, some good reason needs to be demonstrated to displace rule 42.7(2). The court cited In the Matter of Elsmore Resources Limited [2014] NSWSC 1390, noting that 'an order that costs be paid forthwith is an exception, which will only be made in a case that is out of the ordinary.' Circumstances that might justify such an order include: particular delay in proceedings, impecuniosity of a party (as referenced in Hargood v OHTL Public Company Ltd (No 2) [2015] NSWSC 511), or when the case falls within principles discussed in Fiduciary Ltd and Pavlovic regarding separately identifiable matters or unreasonable conduct."
+  },
+  {
+    "question": "How does a court typically approach costs orders where both parties have had partial success on interlocutory motions?",
+    "ground_truth": "As shown in Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, where both parties have had partial success on interlocutory motions, the court will often order that each party bear their own costs. The court in that case stated: 'Viewed overall, both parties had a measure of success on these two motions' and concluded that 'Given the mixed success enjoyed by both sides in the dispute, I consider that the appropriate order is that each of the parties should bear their own costs of both motions.' The court also noted that mathematical precision in apportioning costs is illusory, and the exercise depends upon matters of impression and evaluation, citing Dodds Family Investments Pty Ltd v Lane Industries Pty Ltd (1993)."
+  },
+  {
+    "question": "What are the grounds for awarding indemnity costs in interlocutory proceedings in NSW courts?",
+    "ground_truth": "While not granting indemnity costs, Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18 indicates that unreasonable conduct by a party in resisting a motion might justify indemnity costs. The plaintiff in that case relied on principles from Pavlovic v Universal Music Australia Pty Ltd (No 2) [2016] NSWCA 31 which applied Fiduciary Ltd v Morningstar Research Pty Ltd (2002), arguing that the defendants had no reasonable prospects of success and behaved unreasonably. However, the court rejected this argument, stating: 'I do not consider that the defendants behaved unreasonably in issuing the subpoena to Mr Reslan to the extent that indemnity costs should be ordered.'"
+  },
+  {
+    "question": "How have NSW courts interpreted Rule 42.7 of the UCPR regarding interlocutory costs?",
+    "ground_truth": "NSW courts have interpreted Rule 42.7 as establishing a default position that can be displaced by discretionary considerations. In Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, the court cited Wilson v Gilles (No 2) [2020] NSWSC 658, describing the rule as 'the starting point as to what the costs order is to be unless that outcome is displaced by a discretionary decision.' Additionally, in Mundi v Hesse [2018] NSWSC 1548, the court stated that Rule 42.7 'appears to be directed to discouraging parties from expending further resources on such costs disputes and to focus on the substantive proceedings.' Using a sporting analogy, the court explained that 'if litigation is compared to a sporting match, then r 42.7 indicates that the normal result after an interlocutory application is that the parties should play on until the final hearing.'"
+  },
+  {
+    "question": "What principles apply when determining whether costs of interlocutory proceedings should be payable forthwith in NSW?",
+    "ground_truth": "As outlined in Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, the starting point is Rule 42.7(2) of the UCPR, which states that costs do not become payable until the conclusion of proceedings unless the court orders otherwise. The court cited In the Matter of Elsmore Resources Limited [2014] NSWSC 1390, stating that 'an order that costs be paid forthwith is an exception, which will only be made in a case that is out of the ordinary.' Such orders have 'the capacity to stultify proceedings, particularly brought by persons with limited resources, and also has the risk of operating unfairly.' In Hargood v OHTL Public Company Ltd (No 2) [2015] NSWSC 511, the court noted that the ordinary rule avoids 'multiple assessments of costs at various stages of the proceedings' which 'might well prove to be time wasting and pointless by costs orders that are made for and against parties at various times during the course of the proceedings.' Factors that might justify costs payable forthwith include particular delay in proceedings or impecuniosity of a party."
+  },
+  {
+    "question": "What approach do NSW courts take to apportioning costs when parties have mixed success on interlocutory motions?",
+    "ground_truth": "In Topine v Canterbury Bankstown Bulldogs Rugby League Club Limited (No 3) [2025] NSWSC 18, the court confirmed that 'where there is a mixed outcome in proceedings, the question of apportionment is very much a matter of discretion, and mathematical precision is illusory,' citing Dodds Family Investments Pty Ltd v Lane Industries Pty Ltd (1993). The court evaluated each party's successes: the plaintiff successfully had part of a subpoena set aside, succeeded in claims under s 126B for some redactions, and was successful regarding the procedure to be adopted; while the defendants successfully showed privilege had been waived in relation to certain documents. Rather than attempting a precise apportionment (such as the plaintiff's request for defendants to pay 50% of certain costs), the court determined that each party should bear their own costs of both motions, considering the overall mixed success."
+  },
+  {
+    "question": "How does the principle of totality apply when sentencing an offender for multiple offenses committed in close temporal proximity but charged at different times?",
+    "ground_truth": "The totality principle requires that the total sentence reflect the overall criminality of the offender's conduct, especially when offenses are closely related in time. In R v Titan Gilkes [2025] NSWSC 23, the offender committed aggravated break-and-enter offenses shortly before a murder but was not charged with murder until two years later. The court acknowledged that had all charges been addressed simultaneously, partial concurrency might have been applied. To account for this, the sentence for the murder was reduced to avoid a disproportionate cumulative penalty, though the court declined to backdate the sentence due to statutory constraints under s 56 of the Crimes (Sentencing Procedure) Act 1999 (NSW)."
+  },
+  {
+    "question": "What are the legal requirements for obtaining a freezing order against a developer in a construction defects case?",
+    "ground_truth": "To obtain a freezing order, the applicant must show a good arguable case on an accrued cause of action and demonstrate a danger that any judgment obtained will be wholly or partly unsatisfied due to the potential disposal of assets by the respondent. The test for 'danger' includes whether there is a 'sufficiently serious risk' or 'real risk of dissipation of assets,' and the applicant does not need to prove dissipation is 'more likely than not.' The case references Uniform Civil Procedure Rules 2005 (NSW) and precedents like Cardile v LED Builders and Patterson v BTR Engineering (Aust) Ltd."
+  },
+  {
+    "question": "How does a court assess the risk of asset dissipation when considering a freezing order application?",
+    "ground_truth": "The court assesses the risk of asset dissipation by examining the respondent's past behavior, such as the disposal of assets, and whether there is evidence that the respondent may not retain proceeds from future sales. In this case, the court inferred a risk based on the developer's history of not retaining proceeds from sold units and its refusal to provide an undertaking to retain proceeds from future sales. The court also considers whether the respondent is a special purpose vehicle with a pattern of distributing profits or lending proceeds to related entities."
+  },
+  {
+    "question": "Can a freezing order be granted against a special purpose vehicle in a construction defects case?",
+    "ground_truth": "Yes, a freezing order can be granted against a special purpose vehicle if there is evidence that it may dispose of assets in a way that would render a future judgment unsatisfied. In this case, the court granted the order against the developer (a special purpose vehicle) because it had a history of distributing or lending sale proceeds to related entities and was likely to do so with the remaining unsold units."
+  },
+  {
+    "question": "What are the legal grounds for setting aside a decision of a medical assessor under the Motor Accident Injuries Act 2017 (NSW)?",
+    "ground_truth": "A decision of a medical assessor can be set aside on the grounds of jurisdictional error or error of law on the face of the record, particularly if the assessor failed to consider relevant evidence or misapplied statutory provisions, as seen in Mutawe v QBE Insurance (Australia) Ltd [2025] NSWSC 19."
+  },
+  {
+    "question": "Under what circumstances can a medical assessment be referred back to the original assessor for correction under Rule 112 of the Personal Injury Commission Rules 2021 (NSW)?",
+    "ground_truth": "A medical assessment can be referred back to the original assessor under Rule 112 if the certificate is incomplete, such as when it fails to address all injuries referred for assessment or does not comply with statutory requirements, as demonstrated in Mutawe v QBE Insurance (Australia) Ltd [2025] NSWSC 19."
+  },
+  {
+    "question": "How does the court determine if a medical assessor's failure to consider a post-assessment medico-legal report constitutes a material error?",
+    "ground_truth": "The court may find a material error if the medical assessor, when correcting an incomplete certificate under Rule 112, fails to evaluate all available evidence, including post-assessment reports, as required by the Motor Accident Guidelines and procedural directions, as highlighted in Mutawe v QBE Insurance (Australia) Ltd [2025] NSWSC 19."
+  },
+  {
+    "question": "What role do the Motor Accident Guidelines play in the assessment of permanent impairment under the Motor Accident Injuries Act 2017 (NSW)?",
+    "ground_truth": "The Motor Accident Guidelines mandate that assessments of permanent impairment must evaluate all available evidence, including medical reports, and consider the impairment as it is at the time of assessment, as emphasized in Mutawe v QBE Insurance (Australia) Ltd [2025] NSWSC 19."
+  },
+  {
+    "question": "What are the legal grounds for setting aside a Review Panel's medical assessment certificate under the Motor Accidents Compensation Act 1999 (NSW)?",
+    "ground_truth": "The legal grounds for setting aside a Review Panel's medical assessment certificate include jurisdictional error, constructive failure to exercise jurisdiction, and error on the face of the record. In this case, the Review Panel erred by limiting itself to only diagnosing the primary psychiatric condition and failing to consider whether the accident resulted in a secondary diagnosis that could amount to relevant permanent impairment. This constituted a constructive failure to exercise jurisdiction. Additionally, the Panel failed to provide adequate reasons for disagreeing with the original assessor's findings, which is an error of law on the face of the record."
+  },
+  {
+    "question": "How does the court determine whether a Review Panel has constructively failed to exercise its jurisdiction in a medical assessment dispute?",
+    "ground_truth": "The court determines a constructive failure to exercise jurisdiction by examining whether the Review Panel addressed all essential matters, including substantial and clearly articulated arguments raised by the parties. In this case, the Review Panel failed to consider the critical issue of a secondary psychiatric diagnosis, despite it being raised in expert material and written submissions. The Panel also did not analyze whether the somatic symptom disorder contributed to another recognized psychiatric condition, as required by the Motor Accident Permanent Impairment Guidelines. This failure to engage with key issues amounted to a constructive failure to exercise jurisdiction."
+  },
+  {
+    "question": "What are the key legal principles regarding procedural fairness in the context of appeals within the NSW Civil and Administrative Tribunal?",
+    "ground_truth": "The key legal principles include that a denial of procedural fairness raises a question of law, as established in cases like Haritos v Commissioner of Taxation and Ekinci v Civil Aviation Safety Authority. The Tribunal is obligated to ensure parties understand the proceedings and have a reasonable opportunity to be heard under s 38(5) of the CAT Act. Procedural fairness requires the Tribunal to inform unrepresented parties of their rights, such as applying for an adjournment or cross-examining witnesses, as highlighted in Flightdeck Geelong Pty Ltd v All Options Pty Ltd."
+  },
+  {
+    "question": "How does the NSW Supreme Court determine whether a matter involves a 'question of law' for the purposes of granting leave to appeal from the NCAT Appeal Panel?",
+    "ground_truth": "The NSW Supreme Court determines a 'question of law' by assessing whether the issue involves legal principles or jurisdictional errors, such as denial of procedural fairness, rather than mixed questions of fact and law. The Court relies on precedents like Attorney-General for the State of New South Wales v X and Maurici v Chief Commissioner of State Revenue, which emphasize that the distinction between law and fact depends on the statutory context and the nature of the decision-maker. A question of law must have a dispositive connection to the outcome of the case."
+  },
+  {
+    "question": "What are the principles for refusing an application to vacate a trial where a party wishes to adduce late evidence?",
+    "ground_truth": "The court considers whether allowing the application is in the interests of justice, having regard to prejudice that may be suffered by the party resisting the application, and the reason why the evidence was not led in the first place. The court must seek to act in accordance with the dictates of justice, with regard to the principles of civil procedure. The principles in Aon Risk Services Australia Ltd v Australian National University are applied, considering not only the interests of the parties to the instant proceedings but also other parties who may be delayed from obtaining a hearing. The notion that adjournments can simply be met by an appropriate costs order is no longer an acceptable approach."
+  },
+
+  {
+    "question": "What factors will a court consider when deciding whether to allow a party to rely on evidence served after the deadline?",
+    "ground_truth": "The court will consider whether allowing the late evidence is in the interests of justice, having regard to prejudice that may be suffered by the party resisting the application, and the reason why the evidence was not led in the first place. Relevant considerations include the adequacy of the explanation for the delay, whether the plaintiff would be able to meet the evidence without vacating the trial, the number of opportunities the party has previously had to put on their evidence, and the volume and complexity of the late evidence."
+  },
+
+  {
+    "question": "Can a party successfully vacate a trial by claiming their former solicitor failed to file evidence on time?",
+    "ground_truth": "A party cannot successfully vacate a trial merely by claiming their former solicitor failed to file evidence on time if the explanation does not bear close scrutiny. In Schmuelly v Elrob Construction Group, the defendant's explanation was rejected because documents showed the defendant had terminated the solicitor's retainer six months earlier, and it should have been obvious that any further preparation would need to be undertaken by a new firm or the defendant themselves. The court found there was an inadequate explanation for the delay and refused to vacate the trial."
+  },
+
+  {
+    "question": "What authorities govern the court's power to adjourn proceedings in New South Wales?",
+    "ground_truth": "Section 66(1) of the Civil Procedure Act 2005 (NSW) provides that the court may adjourn proceedings. While this power is cast in broad terms, its exercise is governed by s 58 of the Act, which requires that, when deciding whether to grant an adjournment, the court must seek to act in accordance with the dictates of justice, in respect of which the court must have regard to ss 56 and 57 of the Civil Procedure Act. The exercise of s 66 is subject to the principles of case management set out by the High Court in Aon Risk Services Australia Ltd v Australian National University (2009) 239 CLR 175; [2009] HCA 27."
+  },
+
+  {
+    "question": "What are the consequences of a party serving thousands of pages of evidence the day before trial?",
+    "ground_truth": "When a party serves thousands of pages of evidence the day before trial (as occurred in Schmuelly v Elrob Construction Group where 3,000 pages were served), the opposing party may not be in a position to meet that material without the trial being vacated. However, this does not automatically mean the court will grant leave to rely on the late evidence or vacate the trial. The court will consider factors such as the adequacy of the explanation for the delay and the number of opportunities the party has previously had to put on their evidence. In Schmuelly, the court refused leave to adduce the late evidence and refused to vacate the hearing despite acknowledging that the plaintiff could not meet the late-served evidence without vacating the trial."
+  },
+
+  {
+    "question": "What is the current approach of courts to the notion that adjournments can be compensated by costs orders?",
+    "ground_truth": "The notion that adjournments can simply be met by an appropriate costs order is no longer an acceptable approach. This principle was established in Aon Risk Services Australia Ltd v Australian National University at [99]-[101] and cited in Australia and New Zealand Banking Group Ltd v Mio Amico Pty Ltd [2013] NSWSC 716 at [59]. Courts now recognize that it is not only the interests of the party to the instant proceedings which ought to be considered; an adjournment necessitates a further appointment of a hearing date which will inevitably delay other parties from obtaining a hearing."
+  },
+
+  {
+    "question": "What standard applies when a court refuses an adjournment of proceedings?",
+    "ground_truth": "In Thornberry v The Queen (1995) 69 ALJR 777, the High Court held per curiam that the refusal of an adjournment which resulted in a party being unable to adequately present their case was a miscarriage of the Court's discretion. This principle has been followed in civil matters, including Singh v Deputy Commissioner of Taxation [2011] FCA 889, Kerr v American Express Australia Ltd [2009] FCA 1219, and Lennox v Amcor Ltd trading as Amcor Cartonboard (No 2) [2009] FCA 962, although much turns on the facts of each case."
+  },
+
+  {
+    "question": "If a party has been granted previous extensions due to personal circumstances, will courts grant further extensions on the same grounds?",
+    "ground_truth": "Courts may be reluctant to grant further extensions on the same grounds if a party has already been granted extensions for those circumstances. In Schmuelly v Elrob Construction Group, the court noted that Ball J had already extended time in light of the tragic loss of the defendant's wife, a failed site inspection, and receipt of the plaintiff's extensive expert report. The court stated, 'I do not consider it appropriate to grant a further extension of time in light of the same matters again today, when an extension has already been given in respect of those matters by a judge of this court.'"
+  },
+
+  {
+    "question": "What are the key principles from Aon Risk Services Australia Ltd v Australian National University that courts apply to adjournment applications?",
+    "ground_truth": "The key principles from Aon Risk Services Australia Ltd v Australian National University that courts apply to adjournment applications include: (1) It is not only the interests of the party to the instant proceedings which ought to be considered; (2) An adjournment necessitates a further appointment of a hearing date which will inevitably delay other parties from obtaining a hearing; and (3) The notion that adjournments can simply be met by an appropriate costs order is no longer an acceptable approach."
+  },
+
+  {
+    "question": "What significance do 'guillotine orders' have in court proceedings regarding evidence deadlines?",
+    "ground_truth": "Guillotine orders establish strict deadlines for serving evidence, specifying that any evidence served outside that time cannot be relied upon without the leave of the Court. In Schmuelly v Elrob Construction Group, Ball J extended the time for the defendants to put on their evidence until 5 July 2024 and also made a guillotine order, such that any evidence served outside that time could not be relied upon without the leave of the Court. This created a significant hurdle for the defendants when they later sought to rely on evidence served after the deadline."
+  },
+  {
+    "question": "What are the legal considerations for a prisoner seeking to maintain a family provision claim under the Felons (Civil Proceedings) Act 1981 (NSW)?",
+    "ground_truth": "The court may grant leave under the Felons (Civil Proceedings) Act 1981 (NSW) for a prisoner to maintain a family provision claim if the proceedings are not an abuse of process and there is a prima facie ground for the claim. The Act applies to persons in custody for serious indictable offences, and the court can grant leave nunc pro tunc to validate proceedings initiated before the conviction. The common law principle of attainder does not preclude such claims, especially when the offences are not classified as felonies under current law."
+  },
+  {
+    "question": "Can property be designated as notional estate for a family provision order if the estate has already been distributed?",
+    "ground_truth": "Yes, property can be designated as notional estate under Part 3.3 of the Succession Act 2006 (NSW) even if the estate has been distributed, provided the court is satisfied that the property became held by a person as a result of the distribution. The court must also find special circumstances to justify the notional estate order, especially if the application is made out of time. The strength of the applicant's claim and the absence of prejudice are factors considered in determining special circumstances."
+  },
+  {
+    "question": "In what circumstances can a court find that a party has implicitly waived privilege over communications with their solicitor?",
+    "ground_truth": "A court can find implicit waiver of privilege when a party's actions are inconsistent with maintaining confidentiality, such as publicly disclosing the substance of privileged communications or blaming the solicitor for procedural shortcomings. In Schmuelly v Elrob Construction Group Pty Ltd [2025] NSWSC 25, the defendant's affidavit criticizing their solicitor's conduct led the court to rule that privilege was waived over communications related to the alleged failures, as maintaining privilege would be unfair in the circumstances."
+  },
+  {
+    "question": "What are the legal principles governing costs orders when a dispute is resolved by consent without a hearing on the merits?",
+    "ground_truth": "The legal principles governing costs orders in such cases include the general rule that costs follow the event, unless there is good reason to displace this presumption. The court may still award costs if one party has effectively capitulated or acted unreasonably, even without a hearing on the merits. This is supported by cases like 'Oshlack v Richmond River Council' and 'Re Minister for Immigration & Ethic Affairs; Ex Parte Lai Qin', where the court emphasized that a successful party has a reasonable expectation of being awarded costs, and unreasonable conduct or capitulation by the other party can justify a costs order."
+  },
+  {
+    "question": "Under what circumstances can a court order costs against a party that has provided undertakings to resolve a dispute without admissions?",
+    "ground_truth": "A court can order costs against a party that has provided undertakings to resolve a dispute without admissions if the party's conduct effectively forced the other party to initiate proceedings and then capitulated to the relief sought. For example, in this case, Keybridge Capital Limited was ordered to pay costs because it unreasonably refused to comply with statutory obligations (such as providing a members' register under s 173 of the Corporations Act) and later conceded to the relief sought by WAM Active Limited through undertakings, which the court viewed as capitulation."
+  },
+  {
+    "question": "Can a party introduce new expert evidence in reply that was not part of their case in chief?",
+    "ground_truth": "No, a party cannot introduce new expert evidence in reply that was not part of their case in chief if it constitutes a new or alternative mode of proving their case. Evidence in reply must be limited to rebutting the defendant's evidence and cannot be used to address deficiencies in the plaintiff's original case. The court will consider the substance of the evidence, not just its form, to determine if it is truly in reply or an impermissible attempt to split the case."
+  },
+  {
+    "question": "What are the key principles of contract construction as outlined by the court in recent commercial agreement disputes?",
+    "ground_truth": "The court emphasized that commercial contracts should be given a business-like interpretation, focusing on the language used, commercial circumstances, and the objects intended to secure. The meaning of words is determined objectively by text, context, and purpose, with preference given to constructions that avoid commercial inconvenience or unjust outcomes. Key cases cited include Australian Broadcasting Commission v Australasian Performing Right Association Ltd (1973) 129 CLR 99 and Electricity Generation Corporation Ltd v Woodside Energy Ltd (2014) 251 CLR 640."
+  },
+  {
+    "question": "How does the court interpret the term 'must include' in the context of contractual obligations regarding territorial notifications?",
+    "ground_truth": "The court ruled that the phrase 'must include' in the contractual clause mandates the inclusion of certain territories but does not prohibit the inclusion of others, such as New Zealand. The absence of explicit exclusionary language implies that the exceptions (like New Zealand) are not mandatory exclusions but optional inclusions at the discretion of the notifying party."
+  },
+  {
+    "question": "What factors does a court consider when determining whether to impose an Interim Supervision Order (ISO) under the Crimes (High Risk Offenders) Act 2006 (NSW)?",
+    "ground_truth": "The court considers factors such as the offender's criminal history, risk assessment reports (e.g., Violence Risk Scale and Violence Risk Appraisal Guide), risk management reports, compliance with parole conditions, participation in rehabilitation programs, and the likelihood of reoffending. The court must be satisfied to a high degree of probability that the offender poses an unacceptable risk of committing another serious offence if not kept under supervision. Key cases cited include State of New South Wales v Cannon [2022] NSWSC 1622 and Attorney General for the State of NSW v Winters [2007] NSWSC 611."
+  },
+  {
+    "question": "How does the court balance the need for community safety with an offender's right to personal liberty when imposing conditions under an Extended Supervision Order (ESO)?",
+    "ground_truth": "The court balances community safety with the offender's right to personal liberty by imposing the least intrusive conditions necessary to mitigate the risk of reoffending. Conditions must be directly or indirectly related to the identified risk factors and should not be unjustifiably onerous or punitive. The court considers the scope, purpose, and objects of the Crimes (High Risk Offenders) Act 2006 (NSW), as outlined in cases such as Wilde v State of New South Wales [2015] NSWCA 28 and State of New South Wales v Boney (Final Hearing) [2020] NSWSC 1375."
+  },
+  {
+    "question": "What are the legal principles governing the allocation of costs when proceedings are discontinued before a final hearing?",
+    "ground_truth": "The legal principles governing the allocation of costs in such cases are outlined in 'Minister for Ethnic Affairs (Commonwealth); ex parte Lai Qin (1997) 186 CLR 622' and 'Australian Securities Commission v Aust-Home Investments Limited (1993) 44 FCR 194'. The court should not conduct a mini-trial but assess whether the parties acted reasonably in commencing or defending the proceedings. The court may also consider the likelihood of success if the matter had proceeded to trial."
+  },
+  {
+    "question": "Under what circumstances can a director of a company compel the production of books and records from other directors?",
+    "ground_truth": "A director has a common law right to inspect and take copies of the company's books and records, as supported by 'Geneva Finance Ltd; Quigley (receiver and manager appointed) v Cook (1992) 7 WAR 496' and 'Corporations Act 2001 (Cth) s 290'. This right exists irrespective of the director's need for the documents, and it can be enforced through legal proceedings if the other directors unreasonably withhold access."
+  },
+  {
+    "question": "What are the legal principles governing the issuance of subpoenas before pleadings are filed in interlocutory disputes?",
+    "ground_truth": "The court in Hann v Hann [2025] NSWSC 80 held that subpoenas issued before pleadings are filed lack a proper forensic purpose unless the issues are crystallized through affidavit evidence or other means. The decision cited Neil Street Co Pty Ltd v Ibrahim [2024] NSWSC 1382, emphasizing that subpoenas must be justified by 'apparent relevance' to an identified issue, which is typically discerned from pleadings or affidavit exchanges in interlocutory disputes."
+  },
+  {
+    "question": "Under what circumstances can a court order the destruction of documents accessed through subpoenas deemed an abuse of process?",
+    "ground_truth": "In Hann v Hann [2025] NSWSC 80, the court set aside subpoenas for bank statements due to lack of proper forensic purpose and ordered the destruction of any accessed documents (including notes) under Order 3. This remedy was applied because the subpoenas were issued prematurely, without justification, and accessed private financial records unrelated to the live issue (cattle identification)."
+  },
+  {
+    "question": "What are the legal principles governing the appointment of a receiver over trust assets when the corporate trustee is in liquidation?",
+    "ground_truth": "The legal principles include: (1) A trustee has a right to be indemnified out of, and exonerated from, the assets of the trust for liabilities incurred as trustee, which constitutes a proprietary interest in the trust assets. (2) This right survives the trustee's removal. (3) A liquidator of a corporate trustee can seek appointment as a receiver to enforce the lien over trust assets. (4) The court may appoint a receiver to protect or preserve trust property for the benefit of interested parties. Key cases supporting these principles are Octavo Investments Pty Ltd v Knight, Bruton Holdings Pty Ltd v Federal Commissioner of Taxation, and Re Stansfield DIY Wealth Pty Ltd (in liq)."
+  },
+  {
+    "question": "Can a liquidator of a corporate trustee access trust assets to cover the costs of winding up the company?",
+    "ground_truth": "Yes, a liquidator of a corporate trustee has a right to access trust assets to cover the costs and expenses of the winding up, including the costs of the receivership. This is established in cases such as Bastion v Gideon Investments Pty Ltd (in liq) and Re North Food Catering Pty Ltd. The liquidator may also seek remuneration from the trust assets, though a separate application may be required for this purpose."
+  },
+  {
+    "question": "What are the key considerations for a court when approving a settlement under section 76 of the Civil Procedure Act 2005 (NSW) for a person under legal incapacity?",
+    "ground_truth": "The court must be satisfied that the settlement is beneficial to the interests of the person under legal incapacity. Key considerations include the amount of the settlement, the risks of continuing litigation, the person's age and health, and whether the settlement aligns with prior judicial findings regarding the distribution of assets. In this case, the court considered the $25 million settlement sum, the risks of the plaintiffs' claims failing, Mrs. Twigg's age and health, and the apportionment mirroring earlier judgments."
+  },
+  {
+    "question": "Can a court approve a settlement where the settlement sum is to be paid into a solicitor's trust account instead of the court, under section 77 of the Civil Procedure Act 2005 (NSW)?",
+    "ground_truth": "Yes, the court can order that the settlement sum be paid into a solicitor's trust account instead of the court under section 77(3) of the Civil Procedure Act 2005 (NSW). In this case, the court approved the disbursement of Mrs. Twigg's $12 million share to the plaintiffs' solicitors' trust account, with further payments to financial advisors as directed by her attorneys."
+  },
+  {
+    "question": "What are the key considerations for determining whether a party's rejection of a Calderbank offer was unreasonable in a family provision claim?",
+    "ground_truth": "The key considerations include whether the offer was reasonable, whether the party achieved a better outcome at trial, and whether the terms of the offer were substantially similar to the court's final orders. In Chester v Cowin (No 2) [2025] NSWSC 74, the court found the offer was reasonable but could not conclusively determine the plaintiffs would have been better off accepting it due to uncertainties like maintenance costs and market rent. The court declined to penalize the plaintiffs for rejecting the offer."
+  },
+  {
+    "question": "How does the court balance the rights of an occupant and a co-owner in a family provision case involving a right of occupation?",
+    "ground_truth": "The court balances the rights by granting a temporary right of occupation to the needy party (e.g., until children finish school) while imposing conditions like payment of a portion of market rent (e.g., one-third) and responsibility for upkeep. In Chester v Cowin (No 2), the court also ensured the co-owner's interest was protected by requiring property maintenance, inspections, and eventual sale, with proceeds split equally."
+  },
+  
+  {
+    "question": "What are the key legal principles for determining whether a genuine dispute exists under section 459H(1)(a) of the Corporations Act 2001 (Cth)?",
+    "ground_truth": "The key legal principles include that a genuine dispute must be bona fide and truly exist in fact, with grounds that are real and not spurious, hypothetical, illusory, or misconceived. The threshold is not high; the company only needs to show that at least one issue has sufficient cogency to be arguable. The court does not assess the merits of the dispute but determines whether there is a plausible contention requiring investigation. Relevant cases include Spencer Constructions Pty Ltd v G & M Aldridge Pty Ltd (1997) 76 FCR 452, CGI Information Systems v APRA Consulting Pty Ltd [2003] NSWSC 728, and Britten-Norman Pty Ltd v Analysis & Technology Australia Pty Ltd (2013) 85 NSWLR 601."
+  },
+  {
+    "question": "Can a statutory demand be set aside if the debt arises from a later agreement that incorporates terms from an earlier disputed agreement?",
+    "ground_truth": "Yes, but only if the dispute pertains to the later agreement itself. In this case, the court held that where a later agreement (e.g., the February 2024 Agreement and July 2024 Agreement) is validly executed and binding, and it incorporates or varies terms from an earlier disputed agreement (e.g., the June 2021 Agreement), the dispute about the earlier agreement's validity becomes irrelevant. The debt claimed under the later agreement stands unless there is a genuine dispute about the later agreement's terms or execution."
+  },
+  {
+    "question": "Under what circumstances can electronic monitoring be imposed as a condition of an Interim Supervision Order for a high-risk sex offender?",
+    "ground_truth": "In State of New South Wales v Hunt (Preliminary) [2025] NSWSC 47, the court approved electronic monitoring (Condition 4) where: (1) the offender had a history of covertly breaching supervision orders (e.g., undisclosed contact with mothers of children); (2) expert evidence indicated the offender exploited gaps in monitoring (psychologist Jonathan Mystakidis noted the offender's 'deceptive and evasive behaviour'); (3) the condition was necessary to detect undisclosed movements and prevent access to potential victims; and (4) less intrusive measures (e.g., curfews) were inadequate. The court balanced invasiveness against the offender's risk profile, emphasizing that monitoring could have detected prior breaches earlier."
+  },
+  {
+    "question": "Does a plea of guilty to a serious indictable offence, prior to formal conviction and sentencing, trigger the requirement for leave to commence civil proceedings under the Felons (Civil Proceedings) Act 1981 (NSW)?",
+    "ground_truth": "In Milligan v State of New South Wales [2025] NSWSC 67, the court held that a plea of guilty to a serious indictable offence (defined by reference to the Interpretation Act 1987) does not, without more, constitute being 'found to have committed' or 'convicted of' an offence under s 4 of the Felons (Civil Proceedings) Act 1981. The plaintiff had pleaded guilty but was awaiting sentencing at the time of filing his civil claim. The court emphasised that a plea is merely an admission and does not equate to a judicial finding, as sentencing judges retain discretion to reject pleas (e.g., due to capacity issues). Thus, leave was not required."
+  },
+  {
+    "question": "How is the term 'serious indictable offence' interpreted for the purposes of the Felons (Civil Proceedings) Act 1981 (NSW), given it is not defined in the Act?",
+    "ground_truth": "In Milligan v State of New South Wales [2025] NSWSC 67, the court clarified that the phrase 'serious indictable offence' in the Felons (Civil Proceedings) Act 1981 is not defined by the Crimes Act 1900 (NSW) (which restricts its definition to that Act). Instead, it must be interpreted by reference to the Dictionary in the Interpretation Act 1987 (NSW) (per s 3(3)). The court noted that the plaintiff's charges (e.g., break and enter under s 112 Crimes Act) met this definition, but this was ancillary to the primary holding that a plea alone does not trigger the leave requirement."
+  },
+  {
+    "question": "What are the key considerations for granting leave to amend pleadings in a construction defects case where the plaintiff initially relied on sample evidence but later expanded the claim to allege systemic defects?",
+    "ground_truth": "The court considers: (1) alignment of amendments with evidence already served (with defendant's consent), (2) absence of prejudice to the defendant's ability to respond, (3) adequacy of explanation for delay (e.g., prolonged settlement negotiations), and (4) case management principles. Prejudice from expired limitation periods may be mitigated by ordering amendments to take effect only from the application date (see *The Owners - Strata Plan No 87639 v Karimbla Properties (No4) Pty Ltd* [2025] NSWSC 58, paras 34, 45, 67)."
+  },
+  {
+    "question": "How does Section 65 of the Civil Procedure Act 2005 (NSW) apply to amendments introducing new causes of action under the Design and Building Practitioners Act 2020 after the limitation period has expired?",
+    "ground_truth": "Under s65(2)(c), amendments may be permitted if new causes of action arise from substantially the same facts as existing claims. However, the court may 'otherwise order' under s65(3) to limit retrospective effect—here, amendments were ordered to take effect only from the application date (11 November 2024) to address limitation prejudice (*The Owners - Strata Plan No 87639*, paras 57–58, 67)."
+  },
+  {
+    "question": "Under what circumstances will a judge disqualify themselves from sentencing due to apprehended bias, particularly when prior findings on an offender's credibility were made in related proceedings?",
+    "ground_truth": "A judge will disqualify themselves if a fair-minded observer might reasonably apprehend bias due to prior findings on the offender's credibility in related proceedings, even if the judge believes they could objectively decide the case. Key factors include: (1) prior public findings on the offender's truthfulness (e.g., *R v Tozer* at paras 10, 20–21); (2) the relevance of those findings to live issues in sentencing (e.g., remorse, rehabilitation prospects); and (3) absence of overriding necessity or consent to proceed (citing *Livesey v NSW Bar Association* and *Re Polites*)."
+  },
+  {
+    "question": "How does the principle of apprehended bias apply when a judge who previously sentenced a co-offender is asked to sentence another participant in the same crime, but on different evidence?",
+    "ground_truth": "Apprehended bias may arise if the judge made prior credibility findings against the second offender during the co-offender's sentencing, and those findings are relevant to the new sentencing (e.g., consent to drug administration in *R v Tozer*). The test is whether a fair-minded observer might reasonably suspect partiality, not whether the judge is actually biased (per *Livesey* and *R v Watson*). Even with different evidence, prior negative credibility assessments may taint perceptions of impartiality (para 20)."
+  },
+  {
+    "question": "What constitutes 'reasonable inquiry' to identify or locate a birth parent whose consent is required for adoption under the Adoption Act 2000 (NSW), when the parent's identity is unknown?",
+    "ground_truth": "Reasonable inquiry requires efforts proportionate to the available information. In cases where the birth parent's identity is unknown (e.g., no surname, contact details, or verifiable social media presence), courts accept that further searches are impractical. Key factors include: (1) the mother's inability to provide identifying details (para 20–21); (2) the parent's active avoidance (e.g., blocking contact, para 20); and (3) the futility of additional searches due to limited data (citing *Re K* [2005] NSWSC 858 and *Re DYK* [2005] NSWSC 1045, para 22)."
+  },
+  {
+    "question": "Can a court dispense with a birth parent's consent to adoption under s 67 of the Adoption Act 2000 (NSW) *before* an adoption application is filed, and if so, under what circumstances?",
+    "ground_truth": "Yes, under s 70(1)(a) of the Act, a court may dispense with consent prior to an adoption application if: (1) the parent cannot be identified or located after reasonable inquiry (s 67(1)(a)); and (2) it is in the child's best interests (s 67(2)). This is particularly urgent where a Temporary Care Arrangement is expiring and reversion to an unwilling birth parent would harm the child (paras 14–16, 24–25)."
+  },
+  {
+    "question": "What are the key considerations for ordering further security for costs in a case where the cross-claim has been significantly amended?",
+    "ground_truth": "The key considerations include: (1) a material change in circumstances, such as a significant amendment to the cross-claim; (2) the adequacy of previously ordered security in light of the new claims; (3) compliance with court orders and procedural rules; (4) the potential for increased costs due to the amended claims; and (5) the risk of dissipation of assets. In Jiang v Han (No 2) [2025] NSWSC 48, the court found that the amended cross-claim, which increased the claimed damages from $13 million to over $23 million and added new issues, justified further security of $185,000."
+  },
+  {
+    "question": "Under what circumstances can a notice to produce or subpoena be set aside for lacking a legitimate forensic purpose?",
+    "ground_truth": "A notice to produce or subpoena can be set aside if the documents sought lack apparent relevance to the issues in the proceedings or if there is no reasonable basis to believe they will materially assist in resolving an identified issue. In Jiang v Han (No 2) [2025] NSWSC 48, the court declined to set aside the subpoena because the documents (e.g., sale contracts, payment records) were relevant to calculating damages and assessing the defendants' claims of economic loss, despite the defendants' arguments about confidentiality and irrelevance."
+  }
+]

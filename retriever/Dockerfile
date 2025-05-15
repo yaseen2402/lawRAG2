@@ -11,6 +11,7 @@ RUN mkdir /app/chroma_db_storage
 RUN pip install gradio
 
 # Copy the retriever script into the working directory
+COPY ./retriever/eval_data.json .
 COPY ./retriever/query.py . 
 EXPOSE 7860
 

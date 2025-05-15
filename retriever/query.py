@@ -1,4 +1,3 @@
-
 import os
 from dotenv import load_dotenv
 import chromadb 
@@ -6,6 +5,7 @@ from sentence_transformers import SentenceTransformer
 import time
 from typing import List, Dict, Any, Union
 import gradio as gr
+import json
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import Chroma
@@ -29,7 +29,7 @@ embedding_model_name = "BAAI/bge-large-en-v1.5"
 dimension = 1024 
 
 # LLM Configuration
-llm_model_name = "gemini-1.5-flash-latest" 
+llm_model_name = "gemini-2.0-flash" 
 
 # Retrieval Configuration
 INITIAL_SEARCH_K = 5 
@@ -237,11 +237,56 @@ def answer_question_with_sources(user_query: str) -> str:
     except Exception as e:
         print(f"\nAn error occurred: {e}")
 
-gr.Interface(
-    fn=answer_question_with_sources,
-    inputs=gr.Textbox(lines=3, placeholder="Ask your legal question here..."),
-    outputs=gr.Markdown(),
-    title="Legal RAG System",
-    description="Ask legal questions and get answers grounded in retrieved court case documents.",
-    allow_flagging="never"
-).launch(server_name="0.0.0.0")
+def get_initial_top_k_docs(query: str, k: int = 5) -> List[Document]:
+    try:
+        return vectorstore.similarity_search(query, k=k)
+    except Exception as e:
+        print(f"Error retrieving initial top-{k} documents: {e}")
+        return []
+
+if __name__ == "__main__":
+    # # Load your prepared 100 questions with ground truths
+    # with open("eval_data.json") as f:
+    #     data = json.load(f)
+
+    # output_data = []
+
+    # with open("evaluation_data.jsonl", "w") as f:
+    #     for item in data:
+    #         question = item["question"]
+    #         ground_truth = item["ground_truth"]
+
+    #         print(f"\nProcessing: {question}")
+
+    #         # Step 1: Get model answer
+    #         try:
+    #             answer = rag_chain.invoke(question)
+    #         except Exception as e:
+    #             print(f"Failed to get answer: {e}")
+    #             answer = "Error generating answer."
+
+    #         # Step 2: Get context from retrieved documents
+    #         try:
+    #             retrieved_docs = get_initial_top_k_docs(question, k=5)
+    #             contexts = [doc.page_content for doc in retrieved_docs]
+    #         except Exception as e:
+    #             print(f"Failed to get context: {e}")
+    #             contexts = []
+
+    #         # Step 3: Assemble and write the data
+    #         entry = {
+    #             "question": question,
+    #             "answer": answer,
+    #             "contexts": contexts,
+    #             "ground_truth": ground_truth
+    #         }
+    #         f.write(json.dumps(entry) + "\n")
+
+    gr.Interface(
+        fn=answer_question_with_sources,
+        inputs=gr.Textbox(lines=3, placeholder="Ask your legal question here..."),
+        outputs=gr.Markdown(),
+        title="Legal RAG System",
+        description="Ask legal questions and get answers grounded in retrieved court case documents.",
+        allow_flagging="never"
+    ).launch(server_name="0.0.0.0")

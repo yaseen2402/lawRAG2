@@ -1,3 +1,6 @@
 .env
 scrape_nswsc.py
 app.py
+qdrant_storage/
+data/
+hf_cache/

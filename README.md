@@ -49,6 +49,50 @@ Navigate to the `lawRAG/` directory in your terminal.
 
     docker-compose run -p 7860:7860 retriever
 
+
+
+
+
+1.  **Build the Docker Images:**
+    * Build the base image (ensure your `requirements.txt` includes `qdrant-client` and is up-to-date):
+        ```bash
+        docker-compose build base_images
+        ```
+    * Build the images for the Qdrant indexer and retriever services:
+        ```bash
+        docker-compose build indexer_qdrant retriever_qdrant
+        ```
+        *(Alternatively, `docker-compose build` will build all services defined in the YAML.)*
+
+2.  **Run the Indexer (One-off Job):**
+    This command starts the `indexer_qdrant` container. It will automatically start the `qdrant` database service if it's not already running due to the `depends_on` configuration. The indexer connects to the Qdrant service and populates the database.
+    ```bash
+    docker-compose run indexer_qdrant
+    ```
+    *Adding `--rm` is good practice for one-off jobs like indexing; it automatically removes the container after it finishes.*
+
+    Wait for this process to complete before running the retriever. You should see output indicating the data loading and indexing progress directly in your terminal.
+
+3.  **Run the Retriever (Interactive Q&A):**
+    This command starts the `retriever_qdrant` container. It will also automatically start the `qdrant` database service if needed. The retriever connects to the Qdrant service to fetch data for answers and starts the Gradio instance.
+    ```bash
+    docker-compose up retriever_qdrant
+    ```
+    *(Using `docker-compose up` is standard for starting services meant to run continuously. It also handles the `depends_on` on the `qdrant` service.)*
+
+    The Gradio interface will be accessible on your host machine at `http://localhost:7860`.
+
+    To run the retriever and Qdrant database in the background (detached mode), use:
+    ```bash
+    docker-compose up -d retriever_qdrant
+    ```
+
+    To stop the running services (Qdrant and Retriever) when running in detached mode, use:
+    ```bash
+    docker-compose down retriever_qdrant
+    ```
+    (or `docker-compose down` from the `lawRAG/` directory to stop all services).
+
 ## Configuration
 
 * **Environment Variables:** Set your `GOOGLE_API_KEY` in the `.env` file.
